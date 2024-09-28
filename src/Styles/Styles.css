@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+header img {
+    height: 50px;
+}
+nav {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+nav a:hover {
+    background-color: #f1f1f1;
+}
+.main-section {
+    padding: 50px;
+}
+.main-section img {
+    width: 350px;
+    
+}
+.main-section button {
+    padding: 10px 65px;
+    margin: 3px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inscreva-se {
+    background-color: #71C834;
+    color: white;
+    border-color: #74ce37;
+
+}
+.inscreva-se:hover {
+    background-color: #74ce37;
+        transform: translateY(-2px);
+  
+}
+.saiba-mais {
+    background-color: #f1f1f1;
+    color: black;
+    border-color: #f1eeee;
+}
+.saiba-mais:hover {
+    background-color: #f1eeee;
+        transform: translateY(-2px);
+}
+.event-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.container1, .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+  .box{
+    width:200px;
+    height: 200px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+    .box:hover{
+        transform: translateY(-5px);
+    }
+
+    

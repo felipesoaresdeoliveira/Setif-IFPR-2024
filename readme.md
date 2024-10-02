@@ -15,7 +15,7 @@ O **Site da Setif IFPR 2024** é o portal oficial do evento Setif IFPR 2024. Est
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/felipesoaresdeoliveira/site-setif-ifpr-2024.git
+   git clone https://github.com/felipesoaresdeoliveira/Setif-IFPR-2024
    ```
 2. Navegue até o diretório do projeto:
    ```bash

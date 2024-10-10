@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/Logotipo_IFET.svg">
     <link rel="stylesheet" href="/src/Styles/Styles.css">
     <script src="/src/js/index.js"></script>
     <title>SETIF 2024</title>
@@ -14,15 +15,16 @@
         <nav>
             <a href="/src/Index.html">Início</a>
             <a href="/src/pages/Projetos.html">Projetos</a>
-            <a href="#">Cronograma</a>
+            <a href="/src/pages/Programacao.html">Cronograma</a>
+            
+            
         </nav>
     </header>
-
 
     <section class="main-section">
         <img src="/src/img/Logo_setif.png" alt="Logo SETIF" class="logo_setif"><p>
         <button class="inscreva-se">Inscreva-se</button>
-        <button class="saiba-mais">Saiba mais</button>
+        <button class="saiba-mais" onclick="window.location.href='/src/pages/saibaMais.html'">Saiba mais</button>
     </section>
 
     <section class="event-image">
@@ -32,39 +34,114 @@
     <section class="professionals">
             <h1>Principais Proficionais</h1>
 
-            <div class="container1">
-                <div class="box">
-                  <h3>(Area de atuação)<br>
-                  palestra ou curso</h3>
-                </div>
-                <div class="box">
-                  (Area de atuação)<br>
-                  palestra ou curso
-                </div>
-                <div class="box">
-                  (Area de atuação)<br>
-                  palestra ou curso
-                </div>
-                <div class="container2">
-                <div class="box">
-                  (Area de atuação)<br>
-                  palestra ou curso
-                </div>
-                <div class="box">
-                  (Area de atuação)<br>
-                  palestra ou curso
-                </div>
-                <div class="box">
-                  (Area de atuação)<br>
-                  palestra ou curso
-                </div>
-                </div>
-
+            <div class="container">
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+              <div class="card">
+                  <div class="image"></div>
+                  <h3>(Área de atuação)</h3>
+                  <p>palestra ou curso</p>
+              </div>
+          </div>
     </section>
 
-  
+  <section class="minicursos-dates">
+
+    <div class="container-dates">
+        <h1 class="palestras">Palestras e Minicursos Ofertados</h1>
+        <div class="content">
+            <div class="section-pl">
+                <h1 class="info">Palestras</h1>
+                <ul>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                </ul>
+            </div>
+            <div class="section-mc">
+                <h1 class="info">Minicursos</h1>
+                <ul>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                    <li>exemplo - dd/mm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="count-date">
+        <div class="contagem-regressiva">
+            <h2>Início do Evento</h2>
+            <div id="contador">
+                00 : 00 : 00 : 00
+            </div>
+        </div>
+    </section>
+
+    <div class="mapa">
+        <iframe class="rounded-3" style="height: 650px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.1691110062343!2d-52.45651458503157!3d-23.054260884937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949296a233a74981%3A0x8aed8519780a4c71!2sIFPR%20-%20Instituto%20Federal%20do%20Paran%C3%A1%20-%20Campus%20Paranava%C3%AD!5e0!3m2!1spt-PT!2sbr!4v1685555475394!5m2!1spt-PT!2sbr" frameborder="0" allowfullscreen="" loading="lazy" width="90%" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
 
     
-
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Somos uma empresa dedicada a fornecer a melhor experiência em eventos e entretenimento.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i>ss<a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; SETIF 2024 - Desenvolvido por Felipe Soares e Luiz Gustavo.
+        </div>
+    </footer>
+    
+    
+</section>
 </body>
 </html>

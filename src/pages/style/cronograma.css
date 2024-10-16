@@ -24,7 +24,6 @@ nav a {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
@@ -37,10 +36,6 @@ nav a:hover {
 }
 
 .parallax-programacao {
-  background-image: url("sua-imagem.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   display: flex;
   height: 100vh;
   align-items: center;

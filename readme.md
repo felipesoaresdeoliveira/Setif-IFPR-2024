@@ -61,6 +61,32 @@ git clone https://github.com/felipesoaresdeoliveira/Setif-IFPR-2024
 
 Se preferir, rode o projeto com uma extensão de servidor local no VS Code, como Live Server.
 
+## Deploy no GitHub Pages
+
+O projeto já está preparado para publicação no GitHub Pages com GitHub Actions, usando o conteúdo da pasta `src` como artefato do site.
+
+### Como publicar
+
+1. Envie o projeto para o repositório no GitHub.
+2. Confirme que a branch principal do repositório é `main`.
+3. No GitHub, abra:
+   `Settings > Pages`
+4. Em `Build and deployment`, selecione:
+   `Source: GitHub Actions`
+5. Faça um `push` para a branch `main`.
+
+O workflow configurado em [deploy-pages.yml](c:/Users/felip/Documents/Site%20Setif%20IFPR%202024/.github/workflows/deploy-pages.yml) fará a publicação automaticamente.
+
+### URL esperada
+
+Depois do primeiro deploy, o site deve ficar disponível em:
+
+```text
+https://felipesoaresdeoliveira.github.io/Setif-IFPR-2024/
+```
+
+Se o nome do repositório mudar, a URL também muda.
+
 ## Manutenção Anual
 
 Os dados principais do evento estão centralizados em [src/js/site-data.js](c:/Users/felip/Documents/Site%20Setif%20IFPR%202024/src/js/site-data.js).

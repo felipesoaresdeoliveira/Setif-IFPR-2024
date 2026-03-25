@@ -30,7 +30,7 @@ Este projeto foi estruturado como um site estático em HTML, CSS e JavaScript, c
 
 ```text
 src/
-  Index.html
+  index.html
   Styles/
     Styles.css
   js/
@@ -57,7 +57,7 @@ git clone https://github.com/felipesoaresdeoliveira/Setif-IFPR-2024
 ```
 
 2. Acesse a pasta do projeto.
-3. Abra [src/Index.html](c:/Users/felip/Documents/Site%20Setif%20IFPR%202024/src/Index.html) no navegador.
+3. Abra [src/index.html](c:/Users/felip/Documents/Site%20Setif%20IFPR%202024/src/index.html) no navegador.
 
 Se preferir, rode o projeto com uma extensão de servidor local no VS Code, como Live Server.
 

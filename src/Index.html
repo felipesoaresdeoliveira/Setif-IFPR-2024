@@ -1,140 +1,236 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/Logotipo_IFET.svg">
-    <link rel="stylesheet" href="/Styles/Styles.css">
-    <script src="/js/index.js"></script>
-    <title>SETIF 2024</title>
+    <meta name="description" content="Portal da SETIF IFPR com programacao, minicursos, palestras, projetos e informacoes do evento.">
+    <link rel="icon" href="img/Logotipo_IFET.svg">
+    <link rel="stylesheet" href="./Styles/Styles.css">
+    <script src="js/site-data.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <title>SETIF IFPR | Portal do Evento</title>
 </head>
 <body>
-    
-    <header>
-        <img src="/img/logo_if.png" alt="Logo IFPR">
-        <nav>
-            <a href="/Index.html">Início</a>
-            <a href="/pages/Projetos.html">Projetos</a>
-            <a href="/pages/Projetos.html">Submissão</a>
-            <a href="/pages/Programacao.html">Cronograma</a>
-            
-            
+    <header class="site-header">
+        <a class="brand" href="Index.html" aria-label="Página inicial da SETIF IFPR">
+            <img src="img/logo_if.png" alt="Logo do IFPR">
+            <div>
+                <strong>SETIF IFPR</strong>
+                <span id="brand-edition-label">Edição em destaque</span>
+            </div>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav">
+            <a href="Index.html">Início</a>
+            <a href="pages/Projetos.html">Projetos</a>
+            <a href="pages/submeter.html">Submissão</a>
+            <a href="pages/Programacao.html">Cronograma</a>
+            <a class="nav-cta" href="#programacao">Ver destaques</a>
         </nav>
     </header>
 
-    <section class="main-section">
-        <img src="/img/Logo_setif.png" alt="Logo SETIF" class="logo_setif"><p>
-        <button class="inscreva-se">Inscreva-se</button>
-        <button class="saiba-mais" onclick="window.location.href='/pages/saibaMais.html'">Saiba mais</button>
-    </section>
-
-    <section class="event-image">
-        <img src="/img/Palestra_img.jpg" alt="Palestra">
-    </section>
-
-    <section class="professionals">
-            <h1>Principais Proficionais</h1>
-
-            <div class="container">
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-              <div class="card">
-                  <div class="image"></div>
-                  <h3>(Área de atuação)</h3>
-                  <p>palestra ou curso</p>
-              </div>
-          </div>
-    </section>
-
-  <section class="minicursos-dates">
-
-    <div class="container-dates">
-        <h1 class="palestras">Palestras e Minicursos Ofertados</h1>
-        <div class="content">
-            <div class="section-pl">
-                <h1 class="info">Palestras</h1>
-                <ul>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
+    <main>
+        <section class="hero" id="topo">
+            <div class="hero-copy">
+                <p class="eyebrow">Portal oficial da Semana de Tecnologia da Informacao</p>
+                <h1>Informacoes da SETIF IFPR reunidas em um unico ambiente.</h1>
+                <p class="hero-text">
+                    Acompanhe a programacao da edicao, consulte os minicursos e palestras previstos,
+                    veja a mostra de projetos e acesse as orientacoes de inscricao e submissao divulgadas
+                    pela comissao organizadora do evento.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="./pages/submeter.html">Inscricoes e submissao</a>
+                    <button class="button button-secondary" type="button" data-open-modal="about-modal">Saiba mais</button>
+                    <a class="button button-ghost" href="./pages/Programacao.html">Abrir cronograma</a>
+                </div>
+                <ul class="hero-highlights">
+                    <li>Programacao separada por palestras e minicursos</li>
+                    <li>Mostra de projetos e informacoes de submissao</li>
+                    <li>Local do evento e cronograma da proxima edicao</li>
                 </ul>
             </div>
-            <div class="section-mc">
-                <h1 class="info">Minicursos</h1>
-                <ul>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                    <li>exemplo - dd/mm</li>
-                </ul>
+
+            <div class="hero-media">
+                <img src="img/Palestra_img.jpg" alt="Auditório com palestra da SETIF">
+                <div class="hero-badge">
+                    <span class="badge-title">IFPR Paranavaí</span>
+                    <strong id="hero-date-label">Próxima edição em outubro</strong>
+                </div>
             </div>
+        </section>
+
+        <section class="stats-section" aria-label="Resumo do evento">
+            <div class="section-heading">
+                <p class="eyebrow">Informacoes do evento</p>
+                <h2>Resumo da programacao prevista para a proxima edicao.</h2>
+            </div>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-number" data-stat="experiencias">0</span>
+                    <p>Atividades previstas</p>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-number" data-stat="palestras">0</span>
+                    <p>Palestras previstas</p>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-number" data-stat="minicursos">0</span>
+                    <p>Minicursos previstos</p>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-number">2</span>
+                    <p>Dias de programacao</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="showcase-section" id="destaques">
+            <div class="section-heading">
+                <p class="eyebrow">Eixos da SETIF</p>
+                <h2>Temas recorrentes da programacao e da mostra academica.</h2>
+            </div>
+            <div class="showcase-grid">
+                <article class="showcase-card">
+                    <img src="https://picsum.photos/seed/setif-ux/700/520" alt="Profissional trabalhando com design e tecnologia" loading="lazy">
+                    <div class="showcase-content">
+                        <span>Desenvolvimento</span>
+                        <h3>Software, interfaces e boas praticas</h3>
+                        <p>Atividades voltadas para desenvolvimento web, organizacao de projetos, interfaces e solucoes para problemas reais.</p>
+                    </div>
+                </article>
+                <article class="showcase-card">
+                    <img src="https://picsum.photos/seed/setif-code/700/520" alt="Pessoa programando em ambiente de desenvolvimento" loading="lazy">
+                    <div class="showcase-content">
+                        <span>Pesquisa aplicada</span>
+                        <h3>Dados, automacao e tecnologia aplicada</h3>
+                        <p>Palestras e minicursos com foco em integracao entre programacao, analise de dados, automacao e uso de laboratorio.</p>
+                    </div>
+                </article>
+                <article class="showcase-card">
+                    <img src="https://picsum.photos/seed/setif-robot/700/520" alt="Laboratório com componentes eletrônicos e robótica" loading="lazy">
+                    <div class="showcase-content">
+                        <span>Mostra academica</span>
+                        <h3>Projetos estudantis e integracao institucional</h3>
+                        <p>Espaco para apresentacao de trabalhos, compartilhamento de experiencias e integracao entre ensino, pesquisa e extensao.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="program-section" id="programacao">
+            <div class="section-heading">
+                <p class="eyebrow">Programacao prevista</p>
+                <h2>Consulte as atividades separadas por modalidade.</h2>
+            </div>
+            <div class="program-toolbar" role="tablist" aria-label="Filtros da programação">
+                <button class="filter-button active" type="button" data-filter="todos">Tudo</button>
+                <button class="filter-button" type="button" data-filter="palestra">Palestras</button>
+                <button class="filter-button" type="button" data-filter="minicurso">Minicursos</button>
+            </div>
+            <div class="program-grid" id="program-grid" aria-live="polite"></div>
+            <a class="section-link" href="pages/Programacao.html">Ver cronograma completo</a>
+        </section>
+
+        <section class="countdown-section">
+            <div class="countdown-card">
+                <p class="eyebrow">Proxima edicao</p>
+                <h2>Contagem regressiva para a abertura do evento.</h2>
+                <div class="countdown-grid" aria-label="Contagem regressiva">
+                    <div class="time-box">
+                        <strong id="days">00</strong>
+                        <span>Dias</span>
+                    </div>
+                    <div class="time-box">
+                        <strong id="hours">00</strong>
+                        <span>Horas</span>
+                    </div>
+                    <div class="time-box">
+                        <strong id="minutes">00</strong>
+                        <span>Minutos</span>
+                    </div>
+                    <div class="time-box">
+                        <strong id="seconds">00</strong>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+                <p class="countdown-message" id="countdown-message">Carregando próxima edição...</p>
+            </div>
+            <aside class="info-panel">
+                <p class="eyebrow">Acesso rapido</p>
+                <ul>
+                    <li>Cronograma com palestras e minicursos</li>
+                    <li>Pagina de projetos da mostra academica</li>
+                    <li>Localizacao do campus e orientacoes gerais</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="location-section" id="local">
+            <div class="section-heading">
+                <p class="eyebrow">Local do evento</p>
+                <h2>IFPR Campus Paranavaí</h2>
+            </div>
+            <div class="location-layout">
+                <div class="location-copy">
+                    <p>
+                        A programação acontece no campus do IFPR em Paranavaí, com espaços preparados para palestras,
+                        demonstrações, oficinas e apresentação de projetos estudantis.
+                    </p>
+                    <a class="button button-secondary" href="pages/Programacao.html">Consultar programação</a>
+                </div>
+                <div class="map-frame">
+                    <iframe
+                        title="Mapa do IFPR Campus Paranavaí"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.1691110062343!2d-52.45651458503157!3d-23.054260884937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949296a233a74981%3A0x8aed8519780a4c71!2sIFPR%20-%20Instituto%20Federal%20do%20Paran%C3%A1%20-%20Campus%20Paranava%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1685555475394!5m2!1spt-BR!2sbr"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Sobre a SETIF</h3>
+                <p>Evento academico voltado para tecnologia, integracao institucional e compartilhamento de experiencias entre estudantes, servidores e comunidade.</p>
+            </div>
+            <div>
+                <h3>Navegação</h3>
+                <a href="Index.html">Página inicial</a>
+                <a href="pages/Projetos.html">Projetos</a>
+                <a href="pages/submeter.html">Submissão</a>
+                <a href="pages/Programacao.html">Cronograma</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <a href="mailto:felipesoaresdeoliveira13@gmail.com">felipesoaresdeoliveira13@gmail.com</a>
+                <a href="#local">Como chegar</a>
+            </div>
+        </div>
+        <p class="footer-bottom">SETIF IFPR | Portal de informacoes do evento</p>
+    </footer>
+
+    <div class="modal" id="about-modal" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+            <button class="modal-close" type="button" aria-label="Fechar modal" data-close-modal>×</button>
+            <p class="eyebrow">Sobre o evento</p>
+            <h2 id="about-modal-title">Informacoes institucionais da SETIF</h2>
+            <p id="about-modal-summary"></p>
+            <div class="modal-section">
+                <h3>Frentes do evento</h3>
+                <ul id="about-modal-pillars"></ul>
+            </div>
+            <div class="modal-section">
+                <h3>Publico</h3>
+                <p id="about-modal-audience"></p>
+            </div>
+            <a class="button button-primary" href="./pages/submeter.html">Ver inscricoes e submissao</a>
         </div>
     </div>
-    </section>
-    
-    <section class="count-date">
-        <div class="contagem-regressiva">
-            <h2>Início do Evento</h2>
-            <div id="contador">
-                00 : 00 : 00 : 00
-            </div>
-        </div>
-    </section>
-
-    <div class="mapa">
-        <iframe class="rounded-3" style="height: 650px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.1691110062343!2d-52.45651458503157!3d-23.054260884937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949296a233a74981%3A0x8aed8519780a4c71!2sIFPR%20-%20Instituto%20Federal%20do%20Paran%C3%A1%20-%20Campus%20Paranava%C3%AD!5e0!3m2!1spt-PT!2sbr!4v1685555475394!5m2!1spt-PT!2sbr" frameborder="0" allowfullscreen="" loading="lazy" width="90%" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> 
-
-    
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Sobre Nós</h3>
-                <p>Os Institutos Federais de Educação, Ciência e Tecnologia (IFs) são instituições públicas federais que oferecem educação profissional e tecnológica em todos os níveis e modalidades.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Links Úteis</h3>
-                <ul>
-                    <a href="#"><li>Eventos</li></a>
-                    <a href="#"><li>Projetos</li></a>
-                    <a href="#"><li>Contato</li></a>
-                    <a href="#"><li>Inscreva-se</li></a>
-                </ul>
-            </div>
-            
-        </div>
-        <div class="footer-bottom">
-            &copy; SETIF 2024 - Desenvolvido por Felipe Soares e Luiz Gustavo.
-        </div>
-    </footer>
-    
-    
-</section>
 </body>
 </html>

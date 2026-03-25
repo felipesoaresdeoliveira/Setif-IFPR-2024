@@ -3,40 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação - Evento</title>
-    <link rel="icon" href="/src/img/Logotipo_IFET.svg">
-    <link rel="stylesheet" href="/src/pages/style/cronograma.css">
-
-    
+    <title>Cronograma | SETIF IFPR</title>
+    <link rel="icon" href="../img/Logotipo_IFET.svg">
+    <link rel="stylesheet" href="./style/cronograma.css">
+    <script src="../js/site-data.js" defer></script>
+    <script src="../js/programacao.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="/src/img/logo_if.png" alt="Logo IFPR">
-        <nav>
-            <a href="/src/Index.html">Início</a>
-            <a href="/src/pages/Projetos.html">Projetos</a>
-            <a href="/src/pages/Projetos.html">Submissão</a>
-            <a href="/src/pages/Programacao.html">Cronograma</a>
-            
-            
+    <header class="site-header">
+        <a class="brand" href="../Index.html">
+            <img src="../img/logo_if.png" alt="Logo do IFPR">
+            <div>
+                <strong>SETIF IFPR</strong>
+                <span id="schedule-brand-label">Cronograma da próxima edição</span>
+            </div>
+        </a>
+        <nav class="site-nav">
+            <a href="../Index.html">Início</a>
+            <a href="./Projetos.html">Projetos</a>
+            <a href="./submeter.html">Submissão</a>
+            <a href="./Programacao.html">Cronograma</a>
         </nav>
     </header>
-    <section class="space">
-    </section>
-    <section class="parallax-programacao">
-        <div class="frame-programacao">
-            <div class="card">
-                
 
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div>
+                <p class="eyebrow">Programacao anual</p>
+                <h1>Cronograma preliminar da proxima edicao da SETIF.</h1>
+                <p>
+                    Consulte as atividades previstas para a edicao vigente. A programacao pode receber ajustes
+                    pela comissao organizadora conforme a confirmacao dos convidados e dos espacos do campus.
+                </p>
+            </div>
+            <div class="highlight-grid">
+                <article>
+                    <strong id="schedule-edition-year">2026</strong>
+                    <span>edicao vigente</span>
+                </article>
+                <article>
+                    <strong id="schedule-days-count">2 dias</strong>
+                    <span>de atividades previstas</span>
+                </article>
+                <article>
+                    <strong id="schedule-campus-label">IFPR</strong>
+                    <span>local do evento</span>
+                </article>
+            </div>
+        </section>
 
-                <h1>
-                    PROGRAMAÇÃO <i class="bi bi-calendar"></i>
-                </h1>
+        <section class="schedule-panel">
+            <div class="panel-header">
+                <div>
+                    <p class="eyebrow">Agenda oficial</p>
+                    <h2>Cronograma da SETIF</h2>
+                </div>
+                <a class="button" href="../Index.html#programacao">Voltar para os destaques</a>
             </div>
-            <div id="even3-widget-session">
-                <iframe src="https://www.even3.com.br/widget/index?evento=setif-2024&amp;type=session&amp;lang=pt" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+
+            <p class="panel-note" id="schedule-update-note">
+                Programacao sujeita a atualizacoes conforme divulgacao da comissao organizadora.
+            </p>
+
+            <div class="schedule-days" id="schedule-days"></div>
+        </section>
+    </main>
 </body>
 </html>

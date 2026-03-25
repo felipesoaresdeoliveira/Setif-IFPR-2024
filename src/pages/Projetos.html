@@ -3,70 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos do Evento</title>
-    <link rel="icon" href="/src/img/Logotipo_IFET.svg">
-    <link rel="stylesheet" href="/src/pages/style/styles.css">
-
+    <title>Projetos | SETIF IFPR</title>
+    <link rel="icon" href="../img/Logotipo_IFET.svg">
+    <link rel="stylesheet" href="./style/styles.css">
+    <script src="../js/site-data.js" defer></script>
+    <script src="../js/projetos.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <img src="/src/img/logo_if.png" alt="Logo IFPR">
-        <nav>
-            <a href="/src/Index.html">Início</a>
-            <a href="/src/pages/Projetos.html">Projetos</a>
-            <a href="/src/pages/Projetos.html">Submissão</a>
-            <a href="/src/pages/Programacao.html">Cronograma</a>
-            
-            
+    <header class="site-header">
+        <a class="brand" href="../Index.html">
+            <img src="../img/logo_if.png" alt="Logo do IFPR">
+            <div>
+                <strong>SETIF IFPR</strong>
+                <span id="projects-brand-label">Projetos em evidência</span>
+            </div>
+        </a>
+        <nav class="site-nav">
+            <a href="../Index.html">Início</a>
+            <a href="./Projetos.html">Projetos</a>
+            <a href="./submeter.html">Submissão</a>
+            <a href="./Programacao.html">Cronograma</a>
         </nav>
     </header>
 
-    <div class="container">
-        <h1>Projetos do Evento</h1>
-        <div class="project-quadrado">
-            <div class="project">
-                <h2>Projeto 1</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 1">
-                <p>Descrição do Projeto 1.</p>
-                <p class="participants">Participantes: João, Maria, Pedro</p>
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div>
+                <p class="eyebrow">Mostra de projetos</p>
+                <h1>Projetos apresentados na mostra academica da SETIF.</h1>
+                <p>
+                    Consulte os trabalhos em destaque, visualize as equipes participantes e abra cada projeto
+                    para acessar informacoes complementares da apresentacao.
+                </p>
             </div>
-            <div class="project">
-                <h2>Projeto 2</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 2">
-                <p>Descrição do Projeto 2.</p>
-                <p class="participants">Participantes: Ana, Carlos, Beatriz</p>
+            <a class="button" href="./submeter.html">Orientacoes para submissao</a>
+        </section>
+
+        <section class="card-grid" id="projects-grid" aria-live="polite"></section>
+    </main>
+
+    <div class="modal" id="project-modal" hidden>
+        <div class="modal-backdrop" data-close-project-modal></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button class="modal-close" type="button" aria-label="Fechar modal" data-close-project-modal>×</button>
+            <div class="modal-media">
+                <img id="project-modal-image" src="" alt="">
             </div>
-            <div class="project">
-                <h2>Projeto 3</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 3">
-                <p>Descrição do Projeto 3.</p>
-                <p class="participants">Participantes: Lucas, Fernanda, Rafael</p>
-            </div>
-            <div class="project">
-                <h2>Projeto 4</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 4">
-                <p>Descrição do Projeto 4.</p>
-                <p class="participants">Participantes: Sofia, Gabriel, Laura</p>
-            </div>
-            <div class="project">
-                <h2>Projeto 5</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 5">
-                <p>Descrição do Projeto 5.</p>
-                <p class="participants">Participantes: Bruno, Mariana, Felipe</p>
-            </div>
-            <div class="project">
-                <h2>Projeto 6</h2>
-                <img src="/src/img/download (3).jpeg" alt="Imagem do Projeto 6">
-                <p>Descrição do Projeto 6.</p>
-                <p class="participants">Participantes: Cleber, Cesar, Felipe</p>
+            <div class="modal-copy">
+                <span class="pill" id="project-modal-tag"></span>
+                <h2 id="project-modal-title"></h2>
+                <p id="project-modal-summary"></p>
+                <div class="modal-meta">
+                    <div>
+                        <strong>Equipe</strong>
+                        <p id="project-modal-team"></p>
+                    </div>
+                    <div>
+                        <strong>Orientação</strong>
+                        <p id="project-modal-advisor"></p>
+                    </div>
+                </div>
+                <div class="modal-meta">
+                    <div>
+                        <strong>Tecnologias</strong>
+                        <p id="project-modal-stack"></p>
+                    </div>
+                    <div>
+                        <strong>Impacto</strong>
+                        <p id="project-modal-impact"></p>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h3>Descrição</h3>
+                    <p id="project-modal-description"></p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
-
-
 </body>
 </html>
